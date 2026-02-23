@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-    <title>NU CSE CGPA Calculator</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NU CSE CGPA Calculator</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>NU CSE CGPA Calculator</h1>
-        <select id="semester" onchange="loadSubjects()">
-            <option value="1">Semester I</option>
-            <option value="2">Semester II</option>
-            <option value="3">Semester III</option>
-            <option value="4">Semester IV</option>
-            <option value="5">Semester V</option>
-            <option value="6">Semester VI</option>
-            <option value="7">Semester VII</option>
-            <option value="8">Semester VIII</option>
-        </select>
-        <div id="subjects"></div>
-        <button onclick="calculateGPA()">Calculate GPA</button>
-        <h2 id="result"></h2>
-    </div>
+<div class="container">
+    <h1>NU CSE CGPA Calculator</h1>
+    <select id="semester" onchange="loadSubjects()">
+        <option value="1">Semester I</option>
+        <option value="2">Semester II</option>
+        <option value="3">Semester III</option>
+        <option value="4">Semester IV</option>
+        <option value="5">Semester V</option>
+        <option value="6">Semester VI</option>
+        <option value="7">Semester VII</option>
+        <option value="8">Semester VIII</option>
+    </select>
+    <div id="subjects"></div>
+    <button onclick="calculateGPA()">Calculate GPA</button>
+    <h2 id="result"></h2>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
